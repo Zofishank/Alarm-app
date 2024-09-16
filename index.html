@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+
+
+        <div class="title">
+            <h1>Alarm app</h1>
+        </div>
+        <div class="alarm_app">
+
+            <div class="clock">
+
+            </div>
+
+            <div class="currentTime">
+                <p><span class="currTime"></span></p>
+            </div>
+
+            <div class="add_alarm">
+                <button onclick="showDiv()" class="add_btn">Add Alarm
+                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                </button>
+            </div>
+
+            <div class="set_alarm_div" style="display: none;">
+                <div class="setTimeOptions">
+
+                    <div class="time_input">
+                        <p>set alarm: </p>
+                        <input type="time" placeholder="set time" class="setTime">
+                    </div>
+
+                    <div class="sound_input">
+                        <p class="text">select sound:</p>
+                        <button class="sounds_btn" onClick="enableSelectSound()">
+                            <i class="fa-solid fa-music" style="color: #000000;"></i>
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="select_sound_div" style="display:none;"></div>
+                <button class="setAlarm" onclick="hideDiv()">Save Alarm
+                    <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                </button>
+            </div>
+
+            
+
+            <div class="recent_alarms">
+                <p>Your Alarms:</p>
+                <div class="msg">there is no alarm yet</div>
+            </div>
+
+            <button class="stopAlarm" onclick="stopAlarm()" style="display: none;">Stop Alarm</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
