@@ -209,7 +209,7 @@ body{
     }
     .alarm_app{
         width: 250px;
-        padding: 20px 30px;
+        padding: 20px 18px;
     }
     .currentTime span{
         font-size: 40px;
@@ -227,7 +227,10 @@ body{
 }
 .time_input,.sound_input{
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
+}
+.sound_input{
+    margin-top: -12px;
 }
 .sounds_btn{
     width: 100%;
@@ -240,12 +243,20 @@ body{
 }
 .sounds_btn,.setAlarm,
 .setSound_btn,.stopAlarm{
-    padding: 10px 12px;
+    padding: 7px 10px;
     font-size: 16px;
 
 }
+.select_sound_div{
+    padding: 10px;
+ 
+}
 .setSound_btn{
     padding: 5px 10px;
+}
+.set_alarm_div{
+    padding: 0px;
+    margin-top: -10px;
 }
 
 }
